@@ -13,7 +13,7 @@
   </head>
   <body class="bg-black font-sans text-white">
     <!-- Navbar -->
-    <navbar id="navbar" class="fixed top-0 left-0 right-0 flex items-center justify-between px-16 py-5 z-20">
+    <navbar id="navbar" class="fixed top-0 left-0 right-0 flex items-center justify-between px-16 py-5 z-20 bg-black opacity-80">
       <!-- Logo -->
       <div class="w-32">
         <a href="index.html">
@@ -54,16 +54,55 @@
     </navbar>
 
     <!-- Header -->
-    <header id="header" class="flex flex-col items-center justify-center w-screen h-screen">
-      <div class="header-content z-10 max-w-sm space-y-4 md:max-w-4xl">
+    <header id="header" class="flex flex-col items-center justify-center w-screen h-screen md:flex-row z-10">
+      <!-- Content -->
+      <div class="header-content z-10 max-w-sm space-y-4 md:space-y-6 md:max-w-3xl">
         <h1 class="text-4xl font-extrabold font-sans md:text-8xl">Welcome to Mad Monster</h1>
-        <p class="text-lg font-semibold">Err on the side of creepy!</p>
+        <p class="text-lg font-semibold md:text-2xl">Err on the side of creepy!</p>
         <div class="buttons-container">
           <a href="#" class="bg-orange text-white px-6 py-3 hover:opacity-75">Events</a>
           <a href="#" class="bg-orange text-white px-6 py-3 hover:opacity-75">News</a>
           <a href="#" class="bg-orange text-white px-6 py-3 hover:opacity-75">Shop</a>
         </div>
       </div>
+      <!-- Image -->
+      <div class="w-64 z-10 hidden md:block">
+        <img src="images/Barlow-png-min.png" alt="" />
+      </div>
     </header>
+
+    <!-- Event Section -->
+    <section id="events" class="bg-black">
+      <div class="section-header py-6 text-center">
+        <h1 class="text-3xl font-sans text-orange md:text-5xl mb-3">This Years Events</h1>
+        <p class="text-gray-400">- We look forward to seeing your spooky spirits! -</p>
+      </div>
+      <div class="container mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-2">
+        <!-- Grid Item -->
+        <div class="flex flex-col items-center justify-center">
+          <a href="#">
+            <img src="images/madmonsterarizona.png" alt="" class="w-64" />
+          </a>
+          <h3 class="text-2xl">Mad Monster Party</h3>
+          <p class="text-lg">Arizona | July 8 - 10 | 2022</p>
+        </div>
+        <!-- Grid Item -->
+        <div class="flex flex-col items-center justify-center">
+          <a href="#">
+            <img src="images/madmonstercarolina.png" alt="" class="w-64" />
+          </a>
+          <h3 class="text-2xl">Mad Monster Party</h3>
+          <p class="text-lg">Carolina | February 18 - 20 | 2022</p>
+        </div>
+        <!-- Grid Item -->
+        <div class="flex flex-col items-center justify-center">
+          <a href="#">
+            <img src="images/madmonsterexpo.png" alt="" class="w-64" />
+          </a>
+          <h3 class="text-2xl">Mad Monster Expo</h3>
+          <p class="text-lg">NC | August 26 - 28 | 2022</p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
