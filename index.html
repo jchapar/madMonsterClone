@@ -1,13 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Tailwind Starter</title>
-</head>
-<body>
-  <h1 class="text-3xl bg-cyan-300">Tailwind</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://kit.fontawesome.com/9a3dbda65a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Mad Monster Party</title>
+  </head>
+  <body class="bg-black font-sans text-white">
+    <!-- Navbar -->
+    <navbar id="navbar" class="fixed top-0 left-0 right-0 flex items-center justify-between px-16 py-5 z-20">
+      <!-- Logo -->
+      <div class="w-32">
+        <a href="index.html">
+          <img src="images/MM-Logo-Red-DARKER-1-cropped.png" alt="" />
+        </a>
+      </div>
+
+      <!-- Nav Menu -->
+      <ul class="main-menu hidden space-x-6 md:flex uppercase">
+        <li class="active border-b-2 border-orange">
+          <a href="">Home</a>
+        </li>
+        <li class="flex items-center justify-center border-b-2 border-transparent hover:border-orange">
+          <a href="">Mad Monster Party AZ 2022</a>
+          <i class="fa-solid fa-chevron-down text-white ml-1"></i>
+        </li>
+        <li class="flex items-center justify-center border-b-2 border-transparent hover:border-orange">
+          <a href="">Mad Monster Expo 2022</a>
+          <i class="fa-solid fa-chevron-down text-white ml-1"></i>
+        </li>
+        <!-- <li>
+            <a href="">Other Events</a>
+          </li> -->
+        <li class="border-b-2 border-transparent hover:border-orange">
+          <a href="">Shop</a>
+        </li>
+        <!-- <li class="border-b-2 border-transparent hover:border-orange">
+            <a href="">Privacy Policy</a>
+          </li> -->
+      </ul>
+
+      <!-- Toggle button -->
+      <div id="toggle-btn" class="cursor-pointer md:hidden">
+        <div class="line w-8 h-1 rounded-full bg-white"></div>
+        <div class="line w-8 h-1 rounded-full bg-white my-1"></div>
+        <div class="line w-8 h-1 rounded-full bg-white"></div>
+      </div>
+    </navbar>
+
+    <!-- Header -->
+    <header id="header" class="flex flex-col items-center justify-center w-screen h-screen">
+      <div class="header-content z-10 max-w-sm space-y-4 md:max-w-4xl">
+        <h1 class="text-4xl font-extrabold font-sans md:text-8xl">Welcome to Mad Monster</h1>
+        <p class="text-lg font-semibold">Err on the side of creepy!</p>
+        <div class="buttons-container">
+          <a href="#" class="bg-orange text-white px-6 py-3 hover:opacity-75">Events</a>
+          <a href="#" class="bg-orange text-white px-6 py-3 hover:opacity-75">News</a>
+          <a href="#" class="bg-orange text-white px-6 py-3 hover:opacity-75">Shop</a>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
