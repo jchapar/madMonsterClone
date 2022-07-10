@@ -57,7 +57,7 @@
     <header id="header" class="flex flex-col items-center justify-center w-screen h-screen md:flex-row z-10">
       <!-- Content -->
       <div class="header-content z-10 max-w-sm space-y-4 md:space-y-6 md:max-w-3xl">
-        <h1 class="text-4xl font-extrabold font-sans md:text-8xl">Welcome to Mad Monster</h1>
+        <h1 class="text-4xl font-extrabold font-sans md:text-8xl">Welcome to <span class="text-orange">Mad Monster</span></h1>
         <p class="text-lg font-semibold md:text-2xl">Err on the side of creepy!</p>
         <div class="buttons-container">
           <a href="#" class="bg-orange text-white px-6 py-3 hover:opacity-75">Events</a>
@@ -142,12 +142,18 @@
           <h3 class="text-xl">Shop your favorites</h3>
           <p class="text-md">Come meet the owners of your favorite online stores while increasing your horror collection!</p>
         </div>
+        <!-- Grid item -->
+        <div class="flex flex-col items-center justify-center max-w-sm text-center space-y-1 m-0">
+          <i class="fa-solid fa-handshake fa-3x"></i>
+          <h3 class="text-xl">Connect</h3>
+          <p class="text-md">Interact with other horror loving ghouls!</p>
+        </div>
       </div>
       <!-- BAT and PUMKIN SVG -->
-      <div class="bat-img w-60 md:w-96 absolute top-10 -left-10 opacity-10">
+      <div class="bat-img w-60 md:w-[800px] absolute top-10 md:-top-10 -left-10 opacity-10">
         <img src="images/bat.svg" alt="" />
       </div>
-      <div class="pumpkin-img w-60 md:w-80 absolute -bottom-5 -right-10 opacity-10">
+      <div class="pumpkin-img w-60 md:w-[500px] absolute -bottom-10 md:-bottom-20 -right-10 opacity-10">
         <img src="images/pumpkin.svg" alt="" />
       </div>
     </section>
