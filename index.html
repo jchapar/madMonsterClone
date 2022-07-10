@@ -106,12 +106,12 @@
     </section>
 
     <!-- About section -->
-    <section id="about" class="bg-orange py-10">
+    <section id="about" class="bg-orange py-10 relative">
       <div class="section-header py-6 text-center">
         <h1 class="text-3xl font-sans md:text-5xl mb-3">About Mad Monster</h1>
         <p class="text-gray-400">- Why we're the best -</p>
       </div>
-      <div class="container mx-auto p-6 grid grid-cols-1 gap-5 justify-items-center content-start space-y-10 md:space-y-0 md:grid-cols-3">
+      <div class="container mx-auto p-6 z-10 grid grid-cols-1 gap-5 justify-items-center content-start space-y-10 md:space-y-0 md:grid-cols-3">
         <!-- Grid item -->
         <div class="flex flex-col items-center justify-center max-w-sm text-center space-y-1 m-0">
           <i class="fa-solid fa-users fa-3x"></i>
@@ -140,8 +140,15 @@
         <div class="flex flex-col items-center justify-center max-w-sm text-center space-y-1 m-0">
           <i class="fa-solid fa-bag-shopping fa-3x"></i>
           <h3 class="text-xl">Shop your favorites</h3>
-          <p class="text-md opacity-80">Come meet the owners of your favorite online stores while increasing your horror collection!</p>
+          <p class="text-md">Come meet the owners of your favorite online stores while increasing your horror collection!</p>
         </div>
+      </div>
+      <!-- BAT and PUMKIN SVG -->
+      <div class="bat-img w-60 md:w-96 absolute top-10 -left-10 opacity-10">
+        <img src="images/bat.svg" alt="" />
+      </div>
+      <div class="pumpkin-img w-60 md:w-80 absolute -bottom-5 -right-10 opacity-10">
+        <img src="images/pumpkin.svg" alt="" />
       </div>
     </section>
 

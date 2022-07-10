@@ -45,3 +45,8 @@
 #info {
   clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
 }
+
+.bat-img,
+.pumpkin-img {
+  z-index: 1;
+}
