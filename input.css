@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   position: relative;
 }
 
@@ -19,4 +20,28 @@
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+#header-az {
+  background-image: url('../images/azmm.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+#header-az::after {
+  content: '';
+  position: absolute;
+  /* z-index: -1; */
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#info {
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
 }
