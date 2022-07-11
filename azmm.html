@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Mad Monster Party</title>
   </head>
-  <body class="bg-black font-sans text-white overflow-x-hidden">
+  <body class="bg-black font-sans text-white overflow-x-hidden relative">
     <!-- Navbar -->
-    <navbar id="navbar" class="fixed top-0 left-0 right-0 flex items-center justify-between px-16 py-5 z-20 bg-black opacity-80">
+    <navbar id="navbar" class="fixed top-0 left-0 right-0 flex items-center justify-between px-16 py-5 z-50 bg-black opacity-80">
       <!-- Logo -->
       <div class="w-32">
         <a href="index.html">
@@ -23,10 +23,10 @@
 
       <!-- Nav Menu -->
       <ul class="main-menu hidden space-x-6 md:flex uppercase">
-        <li class="active border-b-2 border-orange">
+        <li class="active border-b-2 border-transparent">
           <a href="">Home</a>
         </li>
-        <li class="flex items-center justify-center border-b-2 border-transparent hover:border-orange">
+        <li class="flex items-center justify-center border-b-2 border-orange">
           <a href="">Mad Monster Party AZ 2022</a>
           <i class="fa-solid fa-chevron-down text-white ml-1"></i>
         </li>
@@ -34,15 +34,9 @@
           <a href="">Mad Monster Expo 2022</a>
           <i class="fa-solid fa-chevron-down text-white ml-1"></i>
         </li>
-        <!-- <li>
-            <a href="">Other Events</a>
-          </li> -->
         <li class="border-b-2 border-transparent hover:border-orange">
           <a href="">Shop</a>
         </li>
-        <!-- <li class="border-b-2 border-transparent hover:border-orange">
-            <a href="">Privacy Policy</a>
-          </li> -->
       </ul>
 
       <!-- Toggle button -->
@@ -62,7 +56,8 @@
         <div class="buttons-container">
           <!-- <a href="#" class="bg-orange text-white px-6 py-3 hover:opacity-75">Info</a> -->
           <a href="#guests" class="bg-orange text-white px-6 py-3 hover:opacity-75">Guests</a>
-          <a href="#tickets" class="bg-orange text-white px-6 py-3 hover:opacity-75">Buy Tickets</a>
+          <a href="#vendors" class="bg-orange text-white px-6 py-3 hover:opacity-75">Vendors</a>
+          <a href="#" class="bg-orange text-white px-6 py-3 hover:opacity-75">Buy Tickets</a>
         </div>
       </div>
       <!-- Image -->
@@ -70,6 +65,26 @@
         <img src="images/Barlow-png-min.png" alt="" />
       </div>
     </header>
+
+    <!-- Toggle Menu -->
+    <div id="toggle-menu" class="bg-black hidden top-0 left-0 bottom-0 h-screen z-40 w-1/2 items-center justify-center p-10">
+      <ul class="main-menu space-y-2 uppercase flex flex-col items-start justify-start">
+        <li class="border-b-2 border-transparent hover:border-orange">
+          <a href="">Home</a>
+        </li>
+        <li class="flex items-center justify-center border-b-2 border-orange">
+          <a href="">Mad Monster Party AZ 2022</a>
+          <i class="fa-solid fa-chevron-down text-white ml-1"></i>
+        </li>
+        <li class="flex items-center justify-center border-b-2 border-transparent hover:border-orange">
+          <a href="">Mad Monster Expo 2022</a>
+          <i class="fa-solid fa-chevron-down text-white ml-1"></i>
+        </li>
+        <li class="border-b-2 border-transparent hover:border-orange">
+          <a href="">Shop</a>
+        </li>
+      </ul>
+    </div>
 
     <!-- Info Section -->
     <section id="info" class="bg-black py-10">
@@ -88,7 +103,7 @@
     </section>
 
     <!-- Guest Section -->
-    <section id="guest" class="bg-orange">
+    <section id="guests" class="bg-orange">
       <!-- Section Header -->
       <div class="section-header py-6 text-center">
         <h1 class="text-3xl font-sans md:text-5xl mb-3">Special Guests</h1>
@@ -153,7 +168,7 @@
     <!-- Vendors -->
     <section id="vendors">
       <!-- Section Header -->
-      <div class="section-header py-6 text-center z-50 relative">
+      <div class="section-header py-6 text-center z-30 relative">
         <h1 class="text-3xl font-sans md:text-5xl mb-3">Current Vendor List</h1>
         <p class="text-white text-lg tracking-wide md:text-xl">- Want a table? <span class="cursor-pointer">Sign Up Here</span> -</p>
       </div>
@@ -309,5 +324,6 @@
       </div>
       <p class="copyright text-center text-gray-500">Mad Monster Project Clone | Not A Live Site</p>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

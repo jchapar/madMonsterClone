@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,9 +13,9 @@
   </head>
   <body class="bg-black font-sans text-white overflow-x-hidden">
     <!-- Navbar -->
-    <navbar id="navbar" class="fixed top-0 left-0 right-0 flex items-center justify-between px-16 py-5 z-20 bg-black opacity-80">
+    <navbar id="navbar" class="fixed top-0 left-0 right-0 flex items-center justify-between px-16 py-5 z-50 bg-black opacity-80">
       <!-- Logo -->
-      <div class="w-32">
+      <div class="w-32 z-50">
         <a href="index.html">
           <img src="images/MM-Logo-Red-DARKER-1-cropped.png" alt="" />
         </a>
@@ -34,15 +34,9 @@
           <a href="">Mad Monster Expo 2022</a>
           <i class="fa-solid fa-chevron-down text-white ml-1"></i>
         </li>
-        <!-- <li>
-            <a href="">Other Events</a>
-          </li> -->
         <li class="border-b-2 border-transparent hover:border-orange">
           <a href="">Shop</a>
         </li>
-        <!-- <li class="border-b-2 border-transparent hover:border-orange">
-            <a href="">Privacy Policy</a>
-          </li> -->
       </ul>
 
       <!-- Toggle button -->
@@ -70,6 +64,26 @@
         <img src="images/Barlow-png-min.png" alt="" />
       </div>
     </header>
+
+    <!-- Toggle Menu -->
+    <div id="toggle-menu" class="bg-black top-0 left-0 hidden bottom-0 h-screen z-40 w-1/2 items-center justify-center p-10">
+      <ul class="main-menu space-y-2 uppercase flex flex-col items-start justify-start">
+        <li class="active border-b-2 border-orange">
+          <a href="">Home</a>
+        </li>
+        <li class="flex items-center justify-center border-b-2 border-transparent hover:border-orange">
+          <a href="">Mad Monster Party AZ 2022</a>
+          <i class="fa-solid fa-chevron-down text-white ml-1"></i>
+        </li>
+        <li class="flex items-center justify-center border-b-2 border-transparent hover:border-orange">
+          <a href="">Mad Monster Expo 2022</a>
+          <i class="fa-solid fa-chevron-down text-white ml-1"></i>
+        </li>
+        <li class="border-b-2 border-transparent hover:border-orange">
+          <a href="">Shop</a>
+        </li>
+      </ul>
+    </div>
 
     <!-- Event Section -->
     <section id="events" class="bg-black">
@@ -215,5 +229,6 @@
       </div>
       <p class="copyright text-center text-gray-500">Mad Monster Project Clone | Not A Live Site</p>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
